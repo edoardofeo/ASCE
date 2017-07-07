@@ -1,0 +1,69 @@
+
+
+  .map-container{
+     width: 100%;
+     margin: auto;
+     overflow: hidden;
+ }
+
+ #mapid {
+     height: 400px;
+     min-height: 200px;
+     text-align: center;
+     position: relative;
+     background: #eee;
+ }
+
+
+
+  .botton-1 {
+      height: 38px;
+      background-color: #015249;
+      border: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: white;
+  }
+
+  .botton-1:hover{
+      background-color:#01352B;
+
+  }
+
+
+  .title {
+      color: #015249;
+      font-size: 2em;
+  }
+
+
+
+
+ /* bottom of page */
+
+ .prefooter {
+     border-top: #015249 3px solid;
+     padding: 15px;
+     color: white;
+     background-color: #57bc90;
+ }
+
+
+ footer {
+     padding: 20px;
+     margin-top: 20px;
+     color: white;
+     background-color: #015249;
+     text-align: center;
+ }
+
+
+
+ /* stile errori  per jQuery */
+  .error_form {
+      color: #ff0052;
+  }
+
+
+
+

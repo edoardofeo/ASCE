@@ -1,0 +1,76 @@
+/* copertina pagina (header) */
+
+
+.header-text {
+  color: #015249;
+  padding: 1.5% 0 0% 0;
+  background: #57bc90;
+}
+
+.header-text .main {
+  padding: 0 0 0 0.5%;
+  font: bold 2.2em Arial, Helvetica, san-serif;
+}
+
+.header-text .secondary {
+  color: white;
+  font: 2.2em Arial, Helvetica, san-serif;
+}
+
+.cover {
+  padding: 0 1.5% 0 1.5%;
+}
+
+
+#header-top {
+  padding:0;
+  margin: 0;
+  background: #57bc90;
+}
+
+/* bootstrap menubar customizzata */
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+  color: white;
+
+}
+#custom-bootstrap-menu.navbar-default {
+  font-size: 16px;
+  background: #57bc90;
+  border-width: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  border-bottom: #015249 3px solid;
+
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+  color: white;
+  background: #57bc90;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+  color:  #FFC457;
+  background: #57bc90;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+  color:  #FFC457;
+  background: #57bc90;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+  border-color: #57bc90;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+  color:  #FFC457;
+  background-color: #57bc90;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+  background-color: #015249;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #FFC457;
+}
+
