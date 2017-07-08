@@ -2,7 +2,7 @@
 
   .map-container{
      width: 100%;
-     margin: auto;
+    /* margin: auto;*/
      overflow: hidden;
  }
 
@@ -35,8 +35,6 @@
       color: #015249;
       font-size: 2em;
   }
-
-
 
 
  /* bottom of page */

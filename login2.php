@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ?>
 
-<body style="border-top:160px solid #eee; margin:0;padding:0; ">
+<body style="border-top:200px solid #eee">
 <div class="navbar navbar-fixed-top" role="navigation">
     <div id="header-top">
         <div class="cover">
@@ -138,12 +138,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div id="mapid">
 
 
-        <div align="center">
-            <div class="contenitore">
+                <span class="title" align="middle" > LOGIN </span>
 
                 <form id="form-std" method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" >
-
-                    <p><h1 id="title"> LOGIN </h1>
+                <div>
 
                     <label>Email</label><br>
                     <input type="email" placeholder="" name="email" required/>
@@ -157,6 +155,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <span class="error"><?php echo $success; ?></span> </td>
                     <br><br>
                     <input type="submit" class="botton-1" name="login" value="Login"/>
+
+                </div>
                     <div>
                         <?php
 
@@ -164,8 +164,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
 
                 </form>
-            </div>
-        </div>
+
 
 
     </div>

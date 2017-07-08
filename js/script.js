@@ -64,7 +64,7 @@ $(function (){
         var pw = $("#form_pw").val();
         var confirm = $("#form_confirm").val();
 
-        if(pw !=  confirm) {
+        if(pw !==  confirm) {
             $("#confirm_error_msg").html("passwords don't match");
             $("#confirm_error_msg").show();
             error_confirm = true;
@@ -88,6 +88,20 @@ $(function (){
 
     }
 
+
+    $("#submit").submit(function(){
+        $.post(
+            "../account_creation.php",
+            {   username : $("#form_username").val(),
+                email : $("#form_email").val(),
+                pw : $("#form_password").val(),
+                confirm_pw : $("#form_confirm").val()})
+            .done(function(data){
+                $("#success").html(data);
+                alert("data loaded: "+data);
+            });
+    });
+
     $("#registration_form").submit(function() {
 
         error_username = false;
@@ -100,7 +114,7 @@ $(function (){
         check_confirm();
         check_email();
 
-        if(error_username == false && error_pw == false && error_confirm == false && error_email == false) {
+        if(error_username === false && error_pw === false && error_confirm === false && error_email === false) {
             return true;
         } else {
             return false;
@@ -109,18 +123,38 @@ $(function (){
 
 
 
+
+
+
+
+/*
     ////inviare php a signup.php tramite jquery!!!!!!!
     $("#registration_form").submit(function() {
-        var action = $this.attr("acion");
+        var action = $(this).attr("action");
+        $("#success").show(200, function(){
 
-    });
+            $("#success").html("").hide();
+            $("#submit").attr('disabled','disabled');
 
-    $.post(action, {						//effettuo la richiesta http post sul server per inserire il nuovo utente
-        email: $("#form_email").val(),			//inviando i valori nel form
-        nome: $("#form_nome").val(),
-        cognome: $("#form_cognome").val(),
-        password: $("#form_pw").val(),
-        password2: $("#form_confirm").val()
-    },
+            $.post(action, {						//effettuo la richiesta http post sul server per inserire il nuovo utente
+                    			                        //inviando i valori nel form
+                    username: $("#form_username").val(),
+                    email: $("#form_email").val(),
+                    password: $("#form_pw").val(),
+                    confirm: $("#form_confirm").val()
+                },
+                function(response) {
+                    $("#success").html(response);
+                    $("#submit").removeAttr('disabled');
+                    if(response.indexOf("email") >=0 || (response.indexOf("username")) >=0){
+                        setTimeout(function () {window.location.href = "login2.php";}, 2500);
+                    }
 
+            });
+
+             });
+        return false;
+    })
+
+ */
 });
