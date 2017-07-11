@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba1e79f5-adf1-4478-ad52-e691f63ed8d6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup2.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="signup2.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/signup2.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="901">
@@ -77,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stiles.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stiles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/stiles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="328">
@@ -312,7 +311,7 @@
       <option name="presentableId" value="Default" />
       <updated>1499429218949</updated>
       <workItem from="1499429221936" duration="12554000" />
-      <workItem from="1499503852595" duration="15276000" />
+      <workItem from="1499503852595" duration="15358000" />
     </task>
     <task id="LOCAL-00001" summary="Ora funziona la registrazione (non funziona il JQuery)&#10;Fixata la grafica al centro: non si vede più la fascia bianca&#10;sopra il titolo">
       <created>1499522373028</created>
@@ -321,11 +320,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499522373028</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ora funziona la registrazione (non funziona il JQuery)&#10;Fixata la grafica al centro: non si vede più la fascia bianca&#10;sopra il titolo">
+      <created>1499785237518</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1499785237518</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27830000" />
+    <option name="totallyTimeSpent" value="27912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -470,16 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="134" column="20" lean-forward="true" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/account_creation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1381">
@@ -505,6 +501,16 @@
         <state relative-caret-position="328">
           <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signup2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="134" column="20" lean-forward="true" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
