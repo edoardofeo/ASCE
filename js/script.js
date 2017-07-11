@@ -89,17 +89,15 @@ $(function (){
     }
 
 
-    $("#submit").submit(function(){
+    $("#submit").click(function(){
         $.post(
-            "../account_creation.php",
+            "./account_creation.php",
             {   username : $("#form_username").val(),
                 email : $("#form_email").val(),
                 pw : $("#form_password").val(),
-                confirm_pw : $("#form_confirm").val()})
-            .done(function(data){
+                confirm_pw : $("#form_confirm").val()}), function(data){
                 $("#success").html(data);
-                alert("data loaded: "+data);
-            });
+            };
     });
 
     $("#registration_form").submit(function() {
