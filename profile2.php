@@ -87,7 +87,7 @@ include ("authentication2.php");
 
 
 
-<!-- Contenuto pagina -->
+<!-- Contenuto pagina --->
 
 
 <div class="map-container">

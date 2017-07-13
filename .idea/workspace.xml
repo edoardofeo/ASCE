@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba1e79f5-adf1-4478-ad52-e691f63ed8d6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account_creation.php" afterPath="$PROJECT_DIR$/account_creation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/stiles.css" afterPath="$PROJECT_DIR$/css/stiles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index2.php" afterPath="$PROJECT_DIR$/index2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login2.php" afterPath="$PROJECT_DIR$/login2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/memberarea2.php" afterPath="$PROJECT_DIR$/memberarea2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile2.php" afterPath="$PROJECT_DIR$/profile2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup2.php" afterPath="$PROJECT_DIR$/signup2.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,13 +48,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile2.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="profile2.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="758">
-              <caret line="104" column="117" lean-forward="false" selection-start-line="104" selection-start-column="117" selection-end-line="104" selection-end-column="117" />
+            <state relative-caret-position="282">
+              <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding>
-                <marker date="1499877030262" expanded="true" signature="146:202" ph="SELECT ID, U... users" />
+                <marker date="1499958381745" expanded="true" signature="146:202" ph="SELECT ID, U... users" />
               </folding>
             </state>
           </provider>
@@ -91,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
+            <state relative-caret-position="-412">
               <caret line="98" column="41" lean-forward="false" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
               <folding />
             </state>
@@ -160,9 +153,9 @@
         <option value="$PROJECT_DIR$/login2.php" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/css/stiles.css" />
-        <option value="$PROJECT_DIR$/profile2.php" />
         <option value="$PROJECT_DIR$/index2.php" />
         <option value="$PROJECT_DIR$/memberarea2.php" />
+        <option value="$PROJECT_DIR$/profile2.php" />
       </list>
     </option>
   </component>
@@ -324,7 +317,7 @@
       <workItem from="1499429221936" duration="12554000" />
       <workItem from="1499503852595" duration="17251000" />
       <workItem from="1499858631444" duration="2107000" />
-      <workItem from="1499863716985" duration="10525000" />
+      <workItem from="1499863716985" duration="10726000" />
     </task>
     <task id="LOCAL-00001" summary="Ora funziona la registrazione (non funziona il JQuery)&#10;Fixata la grafica al centro: non si vede più la fascia bianca&#10;sopra il titolo">
       <created>1499522373028</created>
@@ -347,11 +340,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499785316287</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ora funziona la registrazione (non funziona il JQuery)&#10;Fixata la grafica al centro: non si vede più la fascia bianca&#10;sopra il titolo">
+      <created>1499958205653</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1499958205653</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42437000" />
+    <option name="totallyTimeSpent" value="42638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
@@ -646,16 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profile2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="104" column="117" lean-forward="false" selection-start-line="104" selection-start-column="117" selection-end-line="104" selection-end-column="117" />
-          <folding>
-            <marker date="1499877030262" expanded="true" signature="146:202" ph="SELECT ID, U... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -698,9 +688,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
+        <state relative-caret-position="-412">
           <caret line="98" column="41" lean-forward="false" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding>
+            <marker date="1499958381745" expanded="true" signature="146:202" ph="SELECT ID, U... users" />
+          </folding>
         </state>
       </provider>
     </entry>
