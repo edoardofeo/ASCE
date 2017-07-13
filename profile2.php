@@ -4,10 +4,10 @@ include ("authentication2.php");
 
 
     include("DBconnection.php");
-
+/*
     $current_user = $_SESSION['user'];
 
-    $stmt = $conn->prepare("SELECT ID, Username, Email FROM users WHERE Email = ?");
+    $stmt = $conn->prepare("SELECT ID, Username, Email FROM users WHERE Username = ?");
     $stmt->bind_param('s', $current_user);
 
     $stmt->execute();
@@ -15,7 +15,7 @@ include ("authentication2.php");
     $stmt->bind_result($id, $user, $email);
     $stmt->store_result();
     $stmt->fetch();
-
+*/
 
 ?>
 
@@ -45,7 +45,7 @@ include ("authentication2.php");
     <div id="header-top">
         <div class="cover">
             <div class="header-text">
-            <span> <img src="cinghiale2.png" width="70" height="70">
+            <span> <img src="cinghiale2.png" width="50" height="50">
                  <span class="main">ANIMALI SELVATCI</span><span class="secondary"> e come evitarli</span>
             </span>
             </div>
@@ -76,9 +76,8 @@ include ("authentication2.php");
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="signup2.php"><span class="glyphicon glyphicon-user"></span> Signup</a>
                     </li>
-                    <li><a href="login2.php"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    <li><a href="login2.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
                     </li>
                 </ul>
             </div>
@@ -96,38 +95,19 @@ include ("authentication2.php");
         <div align="center">
             <div class="contenitore">
 
-                <!-- lo stesso stile inserito nella classe non funziona -->
-                <div class="contenitore" style="display: flex;">
+                <span class="title" align = middle> MANAGE YOUR PROFILE </span>
+                <div class="manageicons">
+                    <ul>
+                        <li>  <a><img src="img/user.png" width="80" height="80"></a>  <figcaption>Update info</figcaption> </li>
+                        <li>  <a><img src="img/password.png" width="80" height="80"></a> <figcaption>Manage your password</figcaption> </li>
+                        <li>  <a><img src="img/chat.png" width="80" height="80"></a> <figcaption>Inbox Messages</figcaption> </li>
+                        <li>  <a><img src="img/email.png" width="80" height="80"></a> <figcaption>Manage your email</figcaption> </li>
+                        <li>  <a><img src="img/contact-info.png" width="80" height="80"></a> <figcaption>Display info</figcaption> </li>
 
-                    <div style="width: 40%">
-                        <h1 id="title"> YOUR INFORMATION </h1>
-                        <label>Email:</label><label><?php echo $email; ?></label><br>
-                        <label>ID:</label><label><?php echo $id; ?></label><br>
-                        <label>Username:</label><label><?php echo $user; ?></label><br>
-                    </div>
-
-                    <div  style="width: 40%;">
-                        <form id="form-std" method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" >
-                            <h1 id="title"> MANAGE YOUR PROFILE </h1>
-                            <label>Address</label><br>
-                            <input type="text" placeholder="" name="email" required/>
-                            <br><br>
-                            <label>Gender</label><br>
-                            <input type="radio" name="gender" value="male" checked> Male<br>
-                            <input type="radio" name="gender" value="female"> Female<br>
-                            <input type="radio" name="gender" value="other"> Other
-                            <br><br>
-                            <label>Birthday</label>
-                            <input type="date" name="bday">
-                            <br><br>
-                            <br><br>
-                            <input type="submit" class="botton-1" name="login" value="Save"/>
-                        </form>
-                    </div>
+                    </ul>
                 </div>
 
             </div>
-        </div>
     </div>
 </div>
 

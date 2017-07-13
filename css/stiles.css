@@ -6,8 +6,8 @@
      overflow: hidden;
  }
 
- #mapid {
-     height: 400px;
+ div #mapid{
+     height: 42em;
      min-height: 200px;
      text-align: center;
      position: relative;
@@ -15,6 +15,12 @@
  }
 
 
+
+
+  .manageicons ul li {
+     display: inline-block;
+      padding: 10% 5% 10% 5%;
+  }
 
   .botton-1 {
       height: 38px;
@@ -34,22 +40,23 @@
   .title {
       color: #015249;
       font-size: 2em;
+      padding:0;
   }
+
+
 
 
  /* bottom of page */
 
  .prefooter {
      border-top: #015249 3px solid;
-     padding: 15px;
-     color: white;
+     padding: 30px;
      background-color: #57bc90;
  }
 
 
  footer {
      padding: 20px;
-     margin-top: 20px;
      color: white;
      background-color: #015249;
      text-align: center;

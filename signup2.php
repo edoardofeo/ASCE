@@ -32,7 +32,7 @@
     <div id="header-top">
         <div class="cover">
             <div class="header-text">
-            <span> <img src="cinghiale2.png" width="70" height="70">
+            <span> <img src="cinghiale2.png" width="50" height="50">
                  <span class="main">ANIMALI SELVATCI</span><span class="secondary"> e come evitarli</span>
             </span>
             </div>
@@ -63,7 +63,6 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="signup2.php"><span class="glyphicon glyphicon-user"></span> Signup</a>
                     </li>
                     <li><a href="login2.php"><span class="glyphicon glyphicon-log-in"></span> Login</a>
                     </li>
@@ -133,11 +132,11 @@
             <br>
             <div id="success"> </div>
             <br><br>
+            <div align="middle"><input type="submit" class="botton-1" name="submit_btt" id="submit" value="Create Account" /> </div><br>
 
         </div>
 
 
-        <div align="middle"><input type="submit" class="botton-1" name="submit_btt" id="submit" value="Create Account" /> </div><br>
 
 
 

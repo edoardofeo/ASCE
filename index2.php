@@ -19,22 +19,23 @@ if(isset($_COOKIE['new_cookie']) || isset($_SESSION['user'])!="" ){
 
     <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
     <title>Animali Selvatici</title>
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+
+      <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/header.css" rel="stylesheet">
     <link href="./css/stiles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 
 
   </head>
 
-    <body style="padding-top:140px">
+    <body style="padding-top:120px">
     <div class="navbar navbar-fixed-top" role="navigation">
 	  <div id="header-top">
 	    <div class="cover">
           <div class="header-text">
-            <span> <img src="cinghiale2.png" width="70" height="70">
-                 <span class="main">ANIMALI SELVATCI</span><span class="secondary"> e come evitarli</span>
-            </span>
+            <span> <img src="cinghiale2.png" width="50" height="50"></span>
+            <span class="main">ANIMALI SELVATCI</span><span class="secondary"> e come evitarli</span>
+
           </div>
 	    </div>
 	  </div>
@@ -93,6 +94,7 @@ if(isset($_COOKIE['new_cookie']) || isset($_SESSION['user'])!="" ){
     </div>
 
     <!-- sotto la mappa -->
+
     <div class="prefooter">
 
 
@@ -105,6 +107,9 @@ if(isset($_COOKIE['new_cookie']) || isset($_SESSION['user'])!="" ){
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="./js/bootstrap.min.js"></script>
+
+
+
     </body>
 
 </html>

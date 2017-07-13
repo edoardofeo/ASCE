@@ -66,7 +66,7 @@ if (isset($_POST['submit_btt'])) {
         $stmt->store_result();
         if($stmt->num_rows>0){
             //$form_error = true;
-            echo "Username already exists!";
+            echo "<div>Username already exists! </div>";
             $stmt->close();
             exit();
         }
@@ -105,7 +105,8 @@ if (isset($_POST['submit_btt'])) {
         $stmt->execute();
         $stmt->close();
 
-        echo "L'account è stato creato con successo, verrai reindirizzato alla home in 5secondi...";
+        echo "L'account è stato creato con successo, verrai reindirizzato alla pagina di Login in 5secondi...";
+    header("refresh: 4; login2.php");
     //}
 }
 

@@ -30,7 +30,7 @@ include ("DBconnection.php");
 
   </head>
 
-    <body style="padding-top:155px">
+    <body style="padding-top:10.5%">
     <div class="navbar navbar-fixed-top" role="navigation">
 	  <div id="header-top">
 	    <div class="cover">

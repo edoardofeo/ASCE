@@ -88,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div id="header-top">
         <div class="cover">
             <div class="header-text">
-            <span> <img src="cinghiale2.png" width="70" height="70">
+            <span> <img src="cinghiale2.png" width="50" height="50">
                  <span class="main">ANIMALI SELVATCI</span><span class="secondary"> e come evitarli</span>
             </span>
             </div>
@@ -151,7 +151,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <br><br>
                     <label id="smaller"><input type="checkbox" name="checkbox"/> Remember me</label>
                     <br>
-                    <span>Se non sei ancora registrato </span>
+                    <span>    </span>
                     <span class="error"><?php echo $success; ?></span> </td>
                     <br><br>
                     <input type="submit" class="botton-1" name="login" value="Login"/>
