@@ -1,4 +1,5 @@
 
+
 <?php
 include ("authentication2.php");
 
@@ -95,60 +96,53 @@ include ("authentication2.php");
         <div align="center">
             <div class="contenitore">
 
-                <span class="title" align = middle> MANAGE YOUR PROFILE </span>
-                <div class="manageicons">
-                    <ul>
-                        <li>  <a href="updateinfo.php"><img  src="img/user.png" width="80" height="80"></a>  <figcaption>Update info</figcaption> </li>
-                        <li>  <a href="managepw.php"><img src="img/password.png" width="80" height="80"></a> <figcaption>Manage your password</figcaption> </li>
-                        <li>  <a href="messages.php"><img src="img/chat.png" width="80" height="80"></a> <figcaption>Inbox Messages</figcaption> </li>
-                        <li>  <a href="manageemail.php"><img src="img/email.png" width="80" height="80"></a> <figcaption>Manage your email</figcaption> </li>
-                        <li>  <a href="displayinfo.php"><img src="img/contact-info.png" width="80" height="80"></a> <figcaption>Display info</figcaption> </li>
+                <span class="title" align = middle> YOUR INFOs </span>
+                <table align="center">
 
-                    </ul>
-                </div>
+                    <tr><td> <label>Username</label> </td></tr>
+                    <tr><td> <span> <?php echo $_SESSION['user']?></span> </td></tr>
+
+                    <tr><td> <label>Email</label> </td></tr>
+                    <tr><td> <span> <?php echo $_SESSION['email']?></span>  </td></tr>
+
+                    <tr><td> <label>Nome</label> </td></tr>
+                    <tr><td> <span> <?php echo $_SESSION['nome'];?></span> </td></tr>
+
+                    <tr><td> <label>Cognome</label> </td></tr>
+                    <tr><td> <span> <?php echo $_SESSION['cognome'];?></span> </td></tr>
+
+                    <tr><td> <label>Nationality</label> </td></tr>
+                    <tr><td> <span> <?php echo $_SESSION['nazione']; ?></span> </td></tr>
+
+                </table>
+
+                <div align="middle"><input type="submit" class="botton-1" name="modify_btt" id="submit" value="Modify Info" /> </div><br>
 
             </div>
+
+            </div>
+        </div>
     </div>
-</div>
 
 
 
 
-<!-- sotto la mappa -->
-<div class="prefooter">
+    <!-- sotto la mappa -->
+    <div class="prefooter">
 
 
-</div>
+    </div>
 
 
-<footer>
-    <p> Progetto finale SAW &copy; 2017</p>
-</footer>
+    <footer>
+        <p> Progetto finale SAW &copy; 2017</p>
+    </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

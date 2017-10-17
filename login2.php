@@ -62,7 +62,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (isset($_POST['checkbox'])) {
                 setcookie("user", $user, time() + 3600);
                 header("refresh:4 ; memberarea2.php");
-
             }
 
             header("refresh: 4; memberarea2.php");
