@@ -21,10 +21,10 @@ if ($_POST){
         $pw = mysqli_real_escape_string($conn, $_POST['pw']);
 
         $pw = hash('sha256', $pw);
-        $stmt = $conn->prepare("SELECT Username, Email, Password FROM users WHERE  Email = ?  AND Password = ? ");
+        $stmt = $conn->prepare("SELECT Nome,Cognome, Nazione, Username, Email, Password FROM users WHERE  Email = ?  AND Password = ? ");
         $stmt->bind_param('ss', $email, $pw);
         $stmt->execute();
-        $stmt->bind_result($user, $email, $pw);
+        $stmt->bind_result($name, $surname, $nation, $user, $email, $pw);
        // echo "$user,$email ";
         $stmt->store_result();
         $stmt->fetch();
@@ -35,6 +35,9 @@ if ($_POST){
             //echo"$user";
             $_SESSION['user'] = $user;
             $_SESSION['email'] = $email;
+            $_SESSION['name'] = $name;
+            $_SESSION['surname'] = $surname;
+            $_SESSION['nation'] = $nation;
             $_SESSION['logged'] = 1;
             echo "ok";
 

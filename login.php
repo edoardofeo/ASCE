@@ -154,7 +154,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <tr><td><input type="password" class="form-control" placeholder="********" name="pw" id="log_pw" required/></td></tr>
                     <tr><td> <div style="min-height: 20px"  class="error_form" id="pw_error_msg">  </div> </td></tr>
 
-                    <tr><td> <label><input type="checkbox" name="checkbox" id="log_checkbox"/> Remember me</label></td></tr>
+                    <tr><td> <div class="checkbox"><label><input type="checkbox" name="checkbox" id="log_checkbox"/> Remember me</label></div></td></tr>
 
                     <tr><td> <div id="login_result"></div></td></tr>
 

@@ -77,6 +77,7 @@ include("authentication.php");
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> Profile</a>
                     </li>
                     <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout (<?php echo $_SESSION['user']?>)</a>
                     </li>
@@ -100,19 +101,19 @@ include("authentication.php");
                 <table align="center">
 
                     <tr><td> <label>Username</label> </td></tr>
-                    <tr><td> <span> <?php echo $_SESSION['user']?></span> </td></tr>
+                    <tr><td><span class="glyphicon glyphicon-user"></span> <span> <?php echo $_SESSION['user']?></span> </td></tr>
 
                     <tr><td> <label>Email</label> </td></tr>
-                    <tr><td> <span> <?php echo $_SESSION['email']?></span>  </td></tr>
+                    <tr><td> <span class="glyphicon glyphicon-envelope"></span> <span><?php echo $_SESSION['email']?></span>  </td></tr>
 
                     <tr><td> <label>Nome</label> </td></tr>
-                    <tr><td> <span> <?php echo $_SESSION['nome'];?></span> </td></tr>
+                    <tr><td> <span> <?php echo $_SESSION['name'];?></span> </td></tr>
 
                     <tr><td> <label>Cognome</label> </td></tr>
-                    <tr><td> <span> <?php echo $_SESSION['cognome'];?></span> </td></tr>
+                    <tr><td> <span> <?php echo $_SESSION['surname'];?></span> </td></tr>
 
                     <tr><td> <label>Nationality</label> </td></tr>
-                    <tr><td> <span> <?php echo $_SESSION['nazione']; ?></span> </td></tr>
+                    <tr><td> <span class="glyphicon glyphicon-map-marker"></span> <span> <?php echo $_SESSION['nation']; ?></span> </td></tr>
 
                 </table>
 
