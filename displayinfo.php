@@ -1,7 +1,7 @@
 
 
 <?php
-include ("authentication2.php");
+include("authentication.php");
 
 
     include("DBconnection.php");
@@ -69,7 +69,7 @@ include ("authentication2.php");
             </div>
             <div class="collapse navbar-collapse navbar-menubuilder">
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a href="index2.php">Home</a>
+                    <li><a href="index.php">Home</a>
                     </li>
                     <li><a href="#" target="_blank">Community</a>
                     </li>
@@ -78,7 +78,7 @@ include ("authentication2.php");
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     </li>
-                    <li><a href="login2.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                    <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout (<?php echo $_SESSION['user']?>)</a>
                     </li>
                 </ul>
             </div>

@@ -1,10 +1,13 @@
 <?php
 
 //se l'utente è gia loggato (con cookie o sessione) rimandato a memberarea
-session_start();
-if(isset($_COOKIE['new_cookie']) || isset($_SESSION['user'])!="" ){
-    header("Location:memberarea2.php");
-}
+include("authentication.php");
+include ("DBconnection.php");
+
+
+//if(isset($_COOKIE['new_cookie']) || isset($_SESSION['user'])!="" ){
+//    header("Location:memberarea.php");
+//}
 
 ?>
 
@@ -19,23 +22,22 @@ if(isset($_COOKIE['new_cookie']) || isset($_SESSION['user'])!="" ){
 
     <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
     <title>Animali Selvatici</title>
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-
-      <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/header.css" rel="stylesheet">
     <link href="./css/stiles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 
 
   </head>
 
-    <body style="padding-top:120px">
+    <body style="padding-top:10.5%">
     <div class="navbar navbar-fixed-top" role="navigation">
 	  <div id="header-top">
 	    <div class="cover">
           <div class="header-text">
-            <span> <img src="cinghiale2.png" width="50" height="50"></span>
-            <span class="main">ANIMALI SELVATCI</span><span class="secondary"> e come evitarli</span>
-
+            <span> <img src="cinghiale2.png" width="70" height="70">
+                 <span class="main">ANIMALI SELVATCI</span><span class="secondary"> e come evitarli</span>
+            </span>
           </div>
 	    </div>
 	  </div>
@@ -56,7 +58,7 @@ if(isset($_COOKIE['new_cookie']) || isset($_SESSION['user'])!="" ){
         </div>
         <div class="collapse navbar-collapse navbar-menubuilder">
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="#">Home</a>
+            <li><a href="memberarea.php">Home</a>
             </li>
             <li><a href="#" target="_blank">Community</a>
             </li>
@@ -64,9 +66,9 @@ if(isset($_COOKIE['new_cookie']) || isset($_SESSION['user'])!="" ){
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-          <li><a href="signup2.php"><span class="glyphicon glyphicon-user"></span> Signup</a>
+          <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> Profile</a>
             </li>
-            <li><a href="login2.php"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+            <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout (<?php echo $_SESSION['user']?>)</a>
             </li>
           </ul>
         </div>
@@ -94,7 +96,6 @@ if(isset($_COOKIE['new_cookie']) || isset($_SESSION['user'])!="" ){
     </div>
 
     <!-- sotto la mappa -->
-
     <div class="prefooter">
 
 
@@ -107,9 +108,6 @@ if(isset($_COOKIE['new_cookie']) || isset($_SESSION['user'])!="" ){
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="./js/bootstrap.min.js"></script>
-
-
-
     </body>
 
 </html>

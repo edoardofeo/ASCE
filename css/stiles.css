@@ -1,75 +1,67 @@
 
-
-  .map-container{
-     width: 100%;
+.map-container {
+    width: 100%;
     /* margin: auto;*/
-     overflow: hidden;
- }
+    overflow: hidden;
+}
 
- div #mapid{
-     height: 42em;
-     min-height: 200px;
-     text-align: center;
-     position: relative;
-     background: #eee;
- }
+div #mapid {
+    height: 42em;
+    min-height: 200px;
+    text-align: center;
+    position: relative;
+    background: #eee;
+}
 
-
-
-
-  .manageicons ul li {
-     display: inline-block;
-      padding: 10% 5% 10% 5%;
-  }
-
-  .botton-1 {
-      height: 38px;
-      background-color: #015249;
-      border: none;
-      padding-left: 20px;
-      padding-right: 20px;
-      color: white;
-  }
-
-  .botton-1:hover{
-      background-color:#01352B;
-
-  }
+label #error_form{
+    margin-bottom: 20px;
+}
 
 
-  .title {
-      color: #015249;
-      font-size: 2em;
-      padding:0;
-  }
+.manageicons ul li {
+    display: inline-block;
+    padding: 10% 5% 10% 5%;
+}
 
+.botton-1 {
+    height: 38px;
+    background-color: #015249;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
 
+.botton-1:hover {
+    background-color: #01352B;
 
+}
 
+.title {
+    color: #015249;
+    font-size: 2em;
+    padding: 0;
+}
 
+/* bottom of page */
 
- /* bottom of page */
+.prefooter {
+    border-top: #015249 3px solid;
+    padding: 30px;
+    background-color: #57bc90;
+}
 
- .prefooter {
-     border-top: #015249 3px solid;
-     padding: 30px;
-     background-color: #57bc90;
- }
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #015249;
+    text-align: center;
+}
 
-
- footer {
-     padding: 20px;
-     color: white;
-     background-color: #015249;
-     text-align: center;
- }
-
-
-
- /* stile errori  per jQuery */
-  .error_form {
-      color: #ff0052;
-  }
+/* stile errori  per jQuery */
+.error_form {
+    color: #ff0052;
+}
 
 
 

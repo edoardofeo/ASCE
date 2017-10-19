@@ -2,7 +2,7 @@
 <?php
 
 session_start();
-include("DBconnection.php");
+include("../DBconnection.php");
 
 
 //var initialization
@@ -10,7 +10,6 @@ include("DBconnection.php");
 
 
 //input sanitizing
-//if (isset($_POST['submit_btt']))
 if ($_POST){
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $surname = mysqli_real_escape_string($conn, $_POST['surname']);
