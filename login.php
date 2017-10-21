@@ -93,7 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ?>
 
-<body style="border-top:140px solid #eee">
+<body style="border-top:145px solid #eee">
     <div class="navbar navbar-fixed-top" role="navigation">
         <div id="header-top">
             <div class="cover">
@@ -143,22 +143,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!-- Contenuto pagina -->
     <div class="map-container">
         <div id="mapid">
-            <span class="title" align="middle" > LOGIN </span><br>
+            <div class="title" align="middle" > LOGIN </div><br>
 
             <form id="login_form" method="post" >
                 <table align="center">
 
-                    <tr><td><input type="email" class="form-control" placeholder="Email" name="email" id="log_email" required/></td></tr>
+                    <tr><td><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user "></i></span>
+                                <input type="email" class="form-control" placeholder="Email" name="email" id="log_email" required/> </div></td></tr>
                     <tr><td> <div style="min-height: 20px"  class="error_form" id="email_error_msg">  </div> </td></tr>
 
-                    <tr><td><input type="password" class="form-control" placeholder="********" name="pw" id="log_pw" required/></td></tr>
+                    <tr><td><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" class="form-control" placeholder="********" name="pw" id="log_pw" required/> </div></td></tr>
                     <tr><td> <div style="min-height: 20px"  class="error_form" id="pw_error_msg">  </div> </td></tr>
 
                     <tr><td> <div class="checkbox"><label><input type="checkbox" name="checkbox" id="log_checkbox"/> Remember me</label></div></td></tr>
 
                     <tr><td> <div id="login_result"></div></td></tr>
 
-                    <tr><td><input type="submit" class="botton-1" name="login" value="Login" id="login_btt" /></td></tr>
+                    <tr><td><input type="submit" class="btn btn-warning" name="login" value="Login" id="login_btt" /></td></tr>
                 </table>
             </form>
         </div>

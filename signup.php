@@ -71,7 +71,7 @@
 
     <div class="map-container">
         <div id="mapid">
-            <div class="title" align = middle> REGISTRATION </div><br>
+            <div class="title"  align = middle> REGISTRATION </div><br>
             <form id="registration_form" method="post"  > <!-- action="account_creation.php" > -->
 
                 <table align="center">
@@ -297,7 +297,7 @@
 
                     <tr><td>
                         <br>
-                                <input type="submit" class="botton-1" name="submit_btt" id="submit_btt" value="Create Account"/>
+                                <input type="submit" class="btn btn-warning" name="submit_btt" id="submit_btt" value="Create Account"/>
 
                     </td></tr>
 

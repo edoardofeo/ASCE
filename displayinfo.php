@@ -29,19 +29,20 @@ include("authentication.php");
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Edoardo Collu & Riccardo Di Dio">
-
     <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
     <title>Animali Selvatici</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/header.css" rel="stylesheet">
     <link href="./css/stiles.css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/modify_script.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 
 
 </head>
 
 
-<body style="border-top:160px solid #eee; margin:0;padding:0; ">
+<body style="border-top:145px solid #eee; margin:0;padding:0; ">
 <div class="navbar navbar-fixed-top" role="navigation">
     <div id="header-top">
         <div class="cover">
@@ -92,43 +93,78 @@ include("authentication.php");
 <!-- Contenuto pagina --->
 
 
-<div class="map-container">
-    <div id="mapid">
-        <div align="center">
-            <div class="contenitore">
+    <div class="map-container">
+        <div id="mapid">
 
-                <span class="title" align = middle> YOUR INFOs </span>
+            <div class="title" align = middle> YOUR INFOs </div><br>
+
+
                 <table align="center">
 
-                    <tr><td> <label>Username</label> </td></tr>
-                    <tr><td><span class="glyphicon glyphicon-user"></span> <span> <?php echo $_SESSION['user']?></span> </td></tr>
+                    <tr><td> <h4 class="text-success"><big>Email &emsp;</big></h4> </td>
+                        <td><div class="input-group"> <input class="form-control" id="mod_email" value="<?php echo $_SESSION['email']?>" disabled>
+                            <span class="input-group-btn"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span>
+                        </div></td>
+                    </tr>
 
-                    <tr><td> <label>Email</label> </td></tr>
-                    <tr><td> <span class="glyphicon glyphicon-envelope"></span> <span><?php echo $_SESSION['email']?></span>  </td></tr>
+                    <tr><td> <h4 class="text-success"><big>Username &emsp;</big></h4> </td>
+                    <td><div class="input-group"> <input class="form-control" id="change_user" value="<?php echo $_SESSION['user']?>" disabled>
+                                <span class="input-group-btn"><button type="button" class="btn btn-default" id="mod_user"><span class="glyphicon glyphicon-pencil"></span>
+                            </div></td>
 
-                    <tr><td> <label>Nome</label> </td></tr>
-                    <tr><td> <span> <?php echo $_SESSION['name'];?></span> </td></tr>
+                    <tr><td> <h4 class="text-success"> <big>Nationality &emsp;</big></h4>  </td>
+                    <td><div class="input-group"> <input class="form-control" id="change_nation" value="<?php echo $_SESSION['nation']?>" disabled>
+                                <span class="input-group-btn"><button type="button" class="btn btn-default" id="mod_nation"><span class="glyphicon glyphicon-pencil"></span>
+                            </div></td>
 
-                    <tr><td> <label>Cognome</label> </td></tr>
-                    <tr><td> <span> <?php echo $_SESSION['surname'];?></span> </td></tr>
+                    <tr><td> <h4 class="text-success"><big>Name &emsp;</big></h4>  </td>
+                    <td><div class="input-group"> <input class="form-control" id="change_name" value="<?php echo $_SESSION['name']?>" disabled>
+                                <span class="input-group-btn"><button type="button" class="btn btn-default" id="mod_name"><span class="glyphicon glyphicon-pencil"></span>
+                            </div></td>
 
-                    <tr><td> <label>Nationality</label> </td></tr>
-                    <tr><td> <span class="glyphicon glyphicon-map-marker"></span> <span> <?php echo $_SESSION['nation']; ?></span> </td></tr>
+                    <tr><td> <h4 class="text-success"> <big>Surname &emsp;</big></h4>  </td>
+                    <td><div class="input-group"> <input class="form-control" id="change_surname"  value="<?php echo $_SESSION['surname']?>" disabled>
+                                <span class="input-group-btn"><button type="button" class="btn btn-default" id="mod_surname"><span class="glyphicon glyphicon-pencil"></span>
+                            </div></td>
+                </table><br>
 
-                </table>
+            <div align="middle"><input type="submit" class="btn btn-warning" name="modify_btt" id="modify-btt" value="Modify Info" /> </div><br>
 
-                <div align="middle"><input type="submit" class="botton-1" name="modify_btt" id="submit" value="Modify Info" /> </div><br>
-
-            </div>
-
-            </div>
         </div>
     </div>
 
 
 
 
-    <!-- sotto la mappa -->
+
+<!--
+                <table align="center">
+
+                    <tr><td> <h4 class="text-success"><big>Email &emsp;</big></h4> </td>
+                        <td> <span class="glyphicon glyphicon-envelope"></span> <span id="mod_email"><?php //echo $_SESSION['email']?></span>  </td></tr>
+
+                    <tr><td> <h4 class="text-success"><big>Username &emsp;</big></h4> </td>
+                    <td id="mod_user"><span class="glyphicon glyphicon-user"></span> <span > <?php// echo $_SESSION['user']?></span> </td></tr>
+
+
+                    <tr><td> <h4 class="text-success"> <big>Nationality &emsp;</big></h4>  </td>
+                    <td  id="mod_nation"> <span class="glyphicon glyphicon-map-marker"></span> <span> <?php //echo $_SESSION['nation']; ?></span> </td></tr>
+
+                    <tr><td> <h4 class="text-success"><big>Name &emsp;</big></h4>  </td>
+                    <td id="mod_name"> <span > <?php //echo $_SESSION['name'];?></span> </td></tr>
+
+                    <tr><td> <h4 class="text-success"> <big>Surname &emsp;</big></h4>  </td>
+                    <td id="mod_surname"> <span > <?php // echo $_SESSION['surname'];?></span> </td></tr>
+
+                </table><br>
+  -->
+
+
+
+
+
+
+<!-- sotto la mappa -->
     <div class="prefooter">
 
 
@@ -141,6 +177,7 @@ include("authentication.php");
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
