@@ -51,7 +51,7 @@ $('document').ready(function() {
                 if (data.toString().includes("ok")) {
                     $("#login_result").fadeIn(100, function () {
                         $("#login_result").html('<div class="alert alert-success"><span class="glyphicon glyphicon-ok-sign"></span> &nbsp;' +
-                            ' Success! You\'ll be redirect to your homepage in 4secs </div>');
+                            ' Success! You\'ll be redirected</div>');
                         setTimeout(function () {window.location.href = "./memberarea.php";}, 4000);
                     });
                 }

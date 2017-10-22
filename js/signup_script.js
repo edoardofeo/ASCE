@@ -41,7 +41,7 @@ $('document').ready(function()
                     minlength: 8
                 },
                 confirm_pw: {
-                   // equalTo: 'pw',
+                    equalTo: '#form_pw',
                     minlength: 8,
                     required: true
                 }
