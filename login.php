@@ -158,7 +158,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     <tr><td> <div class="checkbox"><label><input type="checkbox" name="checkbox" id="log_checkbox"/> Remember me</label></div></td></tr>
 
-                    <tr><td> <div id="login_result"></div></td></tr>
+                    <tr><td> <span id="login_result"></span></td></tr>
 
                     <tr><td><input type="submit" class="btn btn-warning" name="login" value="Login" id="login_btt" /></td></tr>
                 </table>
